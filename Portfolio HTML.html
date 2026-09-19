@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heena Kouser — Data Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#EFF1EA;
+    --ink:#191D1A;
+    --muted:#5B615A;
+    --copper:#AE5A28;
+    --pcb-green:#33513B;
+    --border:#D6D9CE;
+    --card:#F7F8F3;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#14170F; --ink:#EDEFE7; --muted:#A5AA9C; --copper:#D68B57; --pcb-green:#7FAE8D; --border:#2B3025; --card:#1B1F16;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#14170F; --ink:#EDEFE7; --muted:#A5AA9C; --copper:#D68B57; --pcb-green:#7FAE8D; --border:#2B3025; --card:#1B1F16;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:'IBM Plex Sans', sans-serif; line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:740px; margin:0 auto; padding:0 24px;}
+  header.hero{
+    padding:80px 0 56px; border-bottom:1px solid var(--border); position:relative;
+  }
+  header.hero::before{
+    content:""; position:absolute; left:0; top:0; bottom:0; width:3px; background:var(--copper);
+  }
+  header.hero .inner{padding-left:28px;}
+  h1{
+    font-family:'Fraunces', serif; font-weight:600; font-size:clamp(2.4rem,6vw,3.6rem);
+    margin:0 0 6px; letter-spacing:-0.01em;
+  }
+  .role{
+    font-size:1.05rem; color:var(--muted); margin:0 0 20px; max-width:34ch;
+  }
+  .contact-line{
+    font-family:'IBM Plex Mono', monospace; font-size:0.85rem; color:var(--muted);
+  }
+  .contact-line a{color:var(--copper); text-decoration:none; border-bottom:1px solid transparent;}
+  .contact-line a:hover{border-bottom-color:var(--copper);}
+  section{padding:48px 0; border-bottom:1px solid var(--border);}
+  section:last-of-type{border-bottom:none;}
+  h2{
+    font-family:'Fraunces', serif; font-weight:600; font-size:1.4rem; margin:0 0 20px;
+  }
+  p.lead{max-width:56ch; color:var(--ink);}
+  .skill-groups{display:grid; gap:18px;}
+  .skill-group h3{
+    font-size:0.78rem; font-weight:500; color:var(--pcb-green); margin:0 0 8px;
+    font-family:'IBM Plex Mono', monospace;
+  }
+  .chips{display:flex; flex-wrap:wrap; gap:8px;}
+  .chip{
+    border:1px solid var(--border); padding:5px 12px; border-radius:3px;
+    font-size:0.85rem; background:var(--card);
+  }
+  .projects{display:grid; grid-template-columns:1fr 1fr; gap:20px;}
+  @media (max-width:640px){.projects{grid-template-columns:1fr;}}
+  .project-card{
+    background:var(--card); border:1px solid var(--border); border-radius:4px; padding:22px;
+    display:flex; flex-direction:column; gap:10px;
+  }
+  .project-card h3{margin:0; font-size:1.05rem; font-weight:600;}
+  .stack{font-family:'IBM Plex Mono', monospace; font-size:0.75rem; color:var(--copper);}
+  .project-card p{margin:0; font-size:0.92rem; color:var(--muted);}
+  .timeline-item{display:flex; gap:16px; margin-bottom:18px;}
+  .timeline-item:last-child{margin-bottom:0;}
+  .timeline-item .when{
+    font-family:'IBM Plex Mono', monospace; font-size:0.78rem; color:var(--pcb-green);
+    white-space:nowrap; padding-top:2px; min-width:118px;
+  }
+  .timeline-item .what strong{display:block; font-size:0.98rem;}
+  .timeline-item .what span{color:var(--muted); font-size:0.88rem;}
+  footer{padding:40px 0 60px; text-align:left;}
+  footer p{color:var(--muted); font-size:0.85rem;}
+  footer a{color:var(--copper); text-decoration:none;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap"><div class="inner">
+    <h1>Heena Kouser</h1>
+    <p class="role">Electronics &amp; Communication Engineer turned data analyst — I build clean pipelines out of messy data.</p>
+    <p class="contact-line">
+      RT Nagar, Bengaluru &nbsp;·&nbsp;
+      <a href="mailto:heenakousr511@gmail.com">heenakousr511@gmail.com</a> &nbsp;·&nbsp;
+      <a href="tel:+917619318233">+91 76193 18233</a> &nbsp;·&nbsp;
+      <a href="https://linkedin.com/in/heena-kouser-471045220" target="_blank" rel="noopener">LinkedIn</a>
+    </p>
+  </div></div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>About</h2>
+    <p class="lead">2025 ECE graduate from Ghousia College of Engineering who moved toward data work by choice — turning sensor and signal thinking into comfort with SQL, Python, and dashboards. I like projects that start as a raw dataset and end as a decision someone can act on.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skill-groups">
+      <div class="skill-group">
+        <h3>data &amp; analysis</h3>
+        <div class="chips">
+          <span class="chip">Python (Pandas)</span><span class="chip">SQL / MySQL</span>
+          <span class="chip">MS Excel</span><span class="chip">Power BI</span><span class="chip">OpenCV</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>languages</h3>
+        <div class="chips">
+          <span class="chip">Python</span><span class="chip">Java</span><span class="chip">C (Embedded / Arduino)</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>web</h3>
+        <div class="chips">
+          <span class="chip">HTML / CSS</span><span class="chip">JavaScript</span><span class="chip">jQuery</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>certifications</h3>
+        <div class="chips">
+          <span class="chip">Python for Data Science</span><span class="chip">ML &amp; Statistics</span><span class="chip">Full Stack Web Development</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Retail Sales Analytics Dashboard</h3>
+        <div class="stack">SQL · Python/Pandas · Excel · Power BI</div>
+        <p>Analyzed 50,000+ retail sales records end to end — cleaned and modeled the data in SQL and Pandas, then built a Power BI dashboard surfacing sales trends and category performance.</p>
+      </div>
+      <div class="project-card">
+        <h3>Facial Detection &amp; Recognition Attendance System</h3>
+        <div class="stack">Python · OpenCV · CSV storage</div>
+        <p>Built an automated attendance system using real-time face detection and recognition, logging entries to CSV in place of manual roll-calls.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Experience &amp; Education</h2>
+    <div class="timeline-item">
+      <div class="when">2022</div>
+      <div class="what"><strong>Web Development Intern — Audaz Venture, Bangalore</strong><span>Aug 2022 – Nov 2022</span></div>
+    </div>
+    <div class="timeline-item">
+      <div class="when">2019 – 2025</div>
+      <div class="what"><strong>B.E., Electronics &amp; Communication Engineering</strong><span>Ghousia College of Engineering · CGPA 7.2/10</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Open to data analyst and IT/software fresher roles in Bengaluru or remote. Reach out at <a href="mailto:heenakousr511@gmail.com">heenakousr511@gmail.com</a>.</p>
+  </div>
+</footer>
+
+</body>
+</html>
